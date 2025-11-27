@@ -1,5 +1,8 @@
 # Remediations
 
+---
+### Windows 11
+
 | STIG Ref   | Description                                                                                           | Link (Script)                  |
 |------------|-------------------------------------------------------------------------------------------------------|--------------------------------|
 | V-254223   | Microsoft network client: Digitally sign communications (always) – forces SMB client packet signing | [`V-254223.ps1`](Scripts/V-254223.ps1) |
@@ -13,4 +16,16 @@
 | V-254616   | Disable Autoplay/Autorun on all drive types                                                          | [`V-254616.ps1`](Scripts/V-254616.ps1) |
 | V-254240   | Prevent unsolicited Remote Assistance connections                                                    | [`V-254240.ps1`](Scripts/V-254240.ps1) |
 
-*All scripts authored by Stephen Perchard – October 2025 (last modified 27 November 2025)*
+---
+
+### Linux
+
+| STIG Ref       | Description                                                                                 | Link (Script)                          |
+|----------------|---------------------------------------------------------------------------------------------|----------------------------------------|
+| RHEL-09-211030 | Enable FIPS 140-3 validated cryptographic modules (system-wide encryption)                  | [`RHEL-09-211030.sh`](Scripts/RHEL-09-211030.sh) |
+| RHEL-09-231065 | Disable Ctrl-Alt-Del burst action (prevents unauthorized physical reboot)                  | [`RHEL-09-231065.sh`](Scripts/RHEL-09-231065.sh) |
+| RHEL-09-252015 | SSH must not permit empty passwords                                                         | [`RHEL-09-252015.sh`](Scripts/RHEL-09-252015.sh) |
+| RHEL-09-271050 | Ensure the auditd service is active and auditing is enabled                                | [`RHEL-09-271050.sh`](Scripts/RHEL-09-271050.sh) |
+| UBTU-22-232010 | Ubuntu: Ensure sudo commands are executed with a pseudo-tty (prevents TTY hijacking)       | [`UBTU-22-232010.sh`](Scripts/UBTU-22-232010.sh) |
+
+---
